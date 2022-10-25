@@ -11,7 +11,7 @@ python Score_Calculator.py -i ContactProteinNumber -t TotalProteinNumber -f File
 
 After the score calculation step for each cell, raw parameters of the ILP model are obtained. The ILP model is based on the contact protein pairs, and it has two parameters, which are inverse scores of the contact protein pairs (s) and a binary parameter denoting whether a pair covers an interaction between the cells (c).
 
-After determining contact protein pairs of two interacting cells, their model scores (s) are calculated by the following steps (no code used for this):
+After determining contact protein pairs of two interacting cells, their model scores (s) are calculated by the following steps (no code is used for this):
 1) Normalization (min-max) of the scores of the contact proteins in the pair that belong to different cells 
 2) Finding the inverse of the sum of the normalized scores for each pair
 
