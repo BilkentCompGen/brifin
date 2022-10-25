@@ -1,5 +1,7 @@
 # BriFin
 
+Prerequisites: Python 3.5 or higher versions; xlsxwriter, numpy, pandas, xlrd, copy and gurobipy modules 
+
 To calculate the importance scores of the contact proteins and find the top intracellular contributors (non-interacting cell proteins) of their scores,
 Score_Calculator.py is used. It takes an input file including interactions, and calculates intracellular importance scores of the contact proteins of each cell.
 This code is run for each cell. In the input Excel file, there are four sheets. Three sheets (s1, s2, s3) include interactions and the final sheet (s4) include 
