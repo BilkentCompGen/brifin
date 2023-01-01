@@ -1,5 +1,7 @@
 # BriFin
 
+BriFin (Bridge Finder) is a tool designed to detect specialized hubs among the proteins providing cell-to-cell interactions in protein-protein interaction networks that include the proteins of two interacting cells.
+
 Prerequisites
 ---
 *Python 3.5 or higher versions
