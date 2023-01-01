@@ -3,6 +3,7 @@
 Prerequisites
 -------------
 *Python 3.5 or higher versions
+
 *xlsxwriter, numpy, pandas, xlrd, copy and gurobipy modules 
 
 Generating the Intracellular Importance Scores
