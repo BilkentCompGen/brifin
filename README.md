@@ -22,9 +22,9 @@ Generating Intracellular Importance Scores
 
 *Assigning smallest IDs to the interacting proteins is recommended. 
 
-*Command to run Score_Calculator.py is:
+*Command to run **Score_Calculator.py** is:
 
-python Score_Calculator.py -i ContactProteinNumber -t TotalProteinNumber -f FileName -s1 Sheet1Name -s2 Sheet2Name -s3 Sheet3Name -s4 Sheet4Name -r ResultFileName -cn TopContributorNumber
+**python Score_Calculator.py -i ContactProteinNumber -t TotalProteinNumber -f FileName -s1 Sheet1Name -s2 Sheet2Name -s3 Sheet3Name -s4 Sheet4Name -r ResultFileName -cn TopContributorNumber**
 
 After the score calculation step for each cell, raw score parameters of the ILP model are obtained. 
 
@@ -37,15 +37,15 @@ Generating ILP Parameters
 1) Normalization (min-max) of the scores of the contact proteins in the pair that belong to different cells 
 2) Finding the inverse of the sum of the normalized scores for each pair
 
-*To obtain c parameter, **PairCoverParameter.py** is used. It takes a file as input which includes intercellular interactions represented by model IDs of the proteins. The first column includes the model ID of the protein of cell 1 and the second column includes the model ID of the protein of cell 2. It generates the c parameter matrix in a file named **"Parameter_c.xlsx"**. The command to run PairCoverParameter.py is:
+*To obtain c parameter, **PairCoverParameter.py** is used. It takes a file as input which includes intercellular interactions represented by model IDs of the proteins. The first column includes the model ID of the protein of cell 1 and the second column includes the model ID of the protein of cell 2. It generates the c parameter matrix in a file named **"Parameter_c.xlsx"**. The command to run **PairCoverParameter.py** is:
 
 **python PairCoverParameter.py -i PairNumber -f FileName -s SheetName**
 
 Running ILP
 ---
 
-*At the last step, Pair_ILP_Model.py is run with an Excel sheet including s and c parameters. It outputs the model IDs of the selected protein pairs to an Excel file, and is run with the following command:
+*At the last step, **Pair_ILP_Model.py** is run with an Excel sheet including s and c parameters. It outputs the model IDs of the selected protein pairs to an Excel file, and is run with the following command:
 
-python Pair_ILP_Model.py -i InteractionNumber -p PairNumber -f FileName -s1 Sheet_of_c_parameter -s2 Sheet_of_s_parameter -r ResultFileName -a Desired_alpha_value
+**python Pair_ILP_Model.py -i InteractionNumber -p PairNumber -f FileName -s1 Sheet_of_c_parameter -s2 Sheet_of_s_parameter -r ResultFileName -a Desired_alpha_value**
 
 Header is not used in any of the input files.
