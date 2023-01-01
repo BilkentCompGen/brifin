@@ -51,3 +51,5 @@ Running ILP
 **python Pair_ILP_Model.py -i InteractionNumber -p PairNumber -f FileName -s1 Sheet_of_c_parameter -s2 Sheet_of_s_parameter -r ResultFileName -a Desired_alpha_value**
 
 Header is not used in any of the input files.
+
+The data underlying the study where BriFin was introduced, demyelination networks, can be found at Zenodo repository 7381894 (https://doi.org/10.5281/zenodo.7381894) in Supplementary Tables 1-7.
