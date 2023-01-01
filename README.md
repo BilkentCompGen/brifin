@@ -5,8 +5,16 @@ Prerequisites
 *Python 3.5 or higher versions
 *xlsxwriter, numpy, pandas, xlrd, copy and gurobipy modules 
 
-To calculate the importance scores of the contact proteins and find the top intracellular contributors (non-interacting cell proteins) of their scores, Score_Calculator.py is used. It takes an input file including interactions, and calculates intracellular importance scores of the contact proteins of each cell.
-This code is run for each cell. In the input Excel file, there are four sheets. Three sheets (s1, s2, s3) include interactions and the final sheet (s4) include PageRank scores (or any other relevant score) of the proteins. Interactions are written by using two columns and using the model IDs of the proteins. 
+Generating the Intracellular Importance Scores
+-----
+*To calculate the importance scores of the contact proteins and find the top intracellular contributors (non-interacting cell proteins) of their scores, **Score_Calculator.py** is used. 
+
+*It takes an input file including interactions, and calculates intracellular importance scores of the contact proteins of each cell.
+
+*This code is run for each cell. 
+
+*The Input Excel file must include 4 sheets. Three sheets (s1, s2, s3) include interactions and the final sheet (s4) include PageRank scores (or any other relevant score) of the proteins. Interactions are written by using two columns and using the model IDs of the proteins. 
+
 The first sheet (s1) includes the direct interactions of the interacting proteins with non-interacting proteins. The first column has to include the IDs of the interacting proteins, and the interactions have to be sorted by the IDs in the first column.
 The second sheet (s2) includes the interactions between the non-interacting proteins. The third sheet (s3) includes the interactions between the interacting proteins. In the third sheet, the interaction list has to be doubled by the symmetrical interactions. Assigning smallest IDs to the interacting proteins is recommended. Command to run Score_Calculator.py is:
 
