@@ -52,4 +52,4 @@ Running ILP
 
 Header is not used in any of the input files.
 
-The data underlying the study where BriFin was introduced, demyelination networks, can be found at Zenodo repository 7381894 (https://doi.org/10.5281/zenodo.7381894) in Supplementary Tables 1-7.
+The data underlying the study where BriFin was introduced, the data of demyelination networks, can be found at Zenodo repository 7381894 (https://doi.org/10.5281/zenodo.7381894) in Supplementary Tables 1-7.
