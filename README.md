@@ -4,9 +4,9 @@ BriFin (Bridge Finder) is a tool designed to detect specialized hubs among the p
 
 Prerequisites
 ---
-*Python 3.5 or higher versions
+* Python 3.5 or higher versions
 
-*xlsxwriter, numpy, pandas, xlrd, copy and gurobipy modules 
+* xlsxwriter, numpy, pandas, xlrd, copy and gurobipy modules 
 
 Generating Intracellular Importance Scores
 ---
