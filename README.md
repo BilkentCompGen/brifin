@@ -26,7 +26,7 @@ Generating Intracellular Importance Scores
 
 *Command to run **Score_Calculator.py** is:
 
-'python Score_Calculator.py -i ContactProteinNumber -t TotalProteinNumber -f FileName -s1 Sheet1Name -s2 Sheet2Name -s3 Sheet3Name -s4 Sheet4Name -r ResultFileName -cn TopContributorNumber'
+`python Score_Calculator.py -i ContactProteinNumber -t TotalProteinNumber -f FileName -s1 Sheet1Name -s2 Sheet2Name -s3 Sheet3Name -s4 Sheet4Name -r ResultFileName -cn TopContributorNumber`
 
 After the score calculation step for each cell, raw score parameters of the ILP model are obtained. 
 
